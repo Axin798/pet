@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jingchenxi.user.mapper.UserMapper">
+    <select id="findUserByPhone" parameterType="String" resultType="cn.jingchenxi.user.entity.User">
+        select *
+        from user
+        where user_phone = #{userPhone}
+    </select>
+    <insert id="insertUser" parameterType="String" >
+        insert into user(user_phone, user_password, user_name, role_id)
+        VALUES (#{userPhone}, #{userPassword}, #{userName}, (select role_id from role where role = #{role}))
+    </insert>
+</mapper>
