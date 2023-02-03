@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: sensitiveWord
+    name: wordFilter
   cloud:
     nacos:
       discovery:

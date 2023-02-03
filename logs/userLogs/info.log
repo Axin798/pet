@@ -329,3 +329,11 @@
 [21:15:27:502] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - HikariPool-1 - Starting...
 [21:15:27:893] [INFO] - com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:565) - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@61d3a7ad
 [21:15:27:895] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - HikariPool-1 - Start completed.
+[21:31:44:249] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:102) - [HttpClientBeanHolder] Start destroying common HttpClient
+[21:31:44:249] [WARN] - com.alibaba.nacos.common.notify.NotifyCenter.shutdown(NotifyCenter.java:136) - [NotifyCenter] Start destroying Publisher
+[21:31:44:249] [WARN] - com.alibaba.nacos.common.notify.NotifyCenter.shutdown(NotifyCenter.java:153) - [NotifyCenter] Destruction of the end
+[21:31:44:250] [WARN] - com.alibaba.nacos.common.http.HttpClientBeanHolder.shutdown(HttpClientBeanHolder.java:111) - [HttpClientBeanHolder] Destruction of the end
+[21:31:44:278] [INFO] - com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:95) - De-registering from Nacos Server now...
+[21:31:44:322] [INFO] - com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:115) - De-registration finished.
+[21:31:44:347] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+[21:31:44:357] [INFO] - com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.

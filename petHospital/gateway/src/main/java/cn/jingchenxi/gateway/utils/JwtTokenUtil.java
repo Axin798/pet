@@ -104,7 +104,7 @@ public class JwtTokenUtil {
             verifier.verify(token);
             return true;
         } catch (JWTVerificationException e) {
-            return false;
+            throw new RuntimeException("无token,请重新登陆");
         }
     }
 }

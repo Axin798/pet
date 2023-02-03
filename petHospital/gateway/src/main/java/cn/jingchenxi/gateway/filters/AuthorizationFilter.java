@@ -34,7 +34,6 @@ public class AuthorizationFilter implements GlobalFilter {
         if (JwtTokenUtil.checkSign(authorization)) {
             return chain.filter(exchange);
         } else {
-            System.out.println("缺少token");
             return exchange.getResponse().setComplete();
         }
     }
