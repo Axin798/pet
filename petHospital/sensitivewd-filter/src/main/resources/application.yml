@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: sensitiveWord
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.220.205.34:8848/nacos

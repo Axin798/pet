@@ -11,7 +11,7 @@ spring:
       max-file-size: 10MB #单个文件的大小
       max-request-size: 100MB # 整个请求要求的大小
   application:
-    name: user_service
+    name: user
   cloud:
     nacos:
         discovery:
