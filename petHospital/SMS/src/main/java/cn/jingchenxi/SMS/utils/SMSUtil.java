@@ -28,7 +28,7 @@ public class SMSUtil {
 
     public static void sendSMS(String userPhone, String code) throws Exception {
         // 工程代码泄露可能会导致AccessKey泄露，并威胁账号下所有资源的安全性。以下代码示例仅供参考，建议使用更安全的 STS 方式，更多鉴权访问方式请参见：https://help.aliyun.com/document_detail/378657.html
-        com.aliyun.dysmsapi20170525.Client client = SMSUtil.createClient("LTAI5tQrb5bsU7fzKjjcUf4q", "qpMedHhJUjQf1GzSXS2Asf4A85WbD2");
+        com.aliyun.dysmsapi20170525.Client client = SMSUtil.createClient("*******************", "****************************");
         com.aliyun.dysmsapi20170525.models.SendSmsRequest sendSmsRequest = new com.aliyun.dysmsapi20170525.models.SendSmsRequest()
                 .setSignName("阿里云短信测试")
                 .setTemplateCode("SMS_154950909")
